@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="tutor.css"> -->
+    <title>Tutor App</title>
+    <link rel="stylesheet" href="modules.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label class="logo"><a href="index.html">TutorApp</a></label>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="modules.html">Modules</a></li>
+                <li><a href="tutors.html">Tutors</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <div class="a">
+            <h1>MODULES</h1>
+
+            <div class="dropDownList">
+                <label for="towns">Module:</label>
+                <select name="modules" id="modules" placeholder="Select Module">
+                    <option value="" disabled selected>Select Module</option>
+                    <option value="ADF">Applications Development Fundamentals</option>
+                    <option value="MUF">Multimedia</option>
+                    <option value="BUS">Business</option>
+                    <option value="PHP">PHP Elective</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="date">
+                <label for="name">Select date:</label>
+                <input type="date" id="selectDate">
+            </div>
+
+            <h2>Available time slots</h2>
+
+            <div class="radioBtn1">
+                <input class="radioTime" type="radio" name="time" id="time1" value="09:00 - 10:00" required>
+                <label class="radio" for="time">09:00 - 10:00</label>
+            </div>
+
+            <div class="radioBtn2">
+                <input class="radioTime" type="radio" name="time" id="time1" value="11:00 - 12:00" required>
+                <label class="radio" for="time">11:00 - 12:00</label>
+            </div>
+
+            <div class="radioBtn3">
+                <input class="radioTime" type="radio" name="time" id="time1" value="13:00 - 14:00" required>
+                <label class="radio" for="time">13:00 - 14:00</label>
+            </div>
+
+            <div class="radioBtn4">
+                <input class="radioTime" type="radio" name="time" id="time1" value="14:00 - 15:00" required>
+                <label class="radio" for="time">14:00 - 15:00</label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="b">
+            <button id="BookBtn">BOOK</button>
+        </div>
+
+        <br><br>
+
+        <div class="message">
+            <span class="bookMsg"></span>
+        </div>
+    </div>
+</body>
+<script src="./modules.js"></script>
+
+</html>
