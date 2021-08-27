@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="tutor.css"> -->
-    <title>Tutor App</title>
+    <title>Tutoring App</title>
     <link rel="stylesheet" href="modules.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
@@ -19,7 +20,8 @@
                 <i class="fas fa-bars"></i>
             </label>
 
-            <label class="logo"><a href="index.html">TutorApp</a></label>
+            <label class="logo"><a href="index.html"><img class="logoImg" src="logo.jpg" alt="CPUT Tutors" width="100"
+                        height="70"></a></label>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -29,9 +31,10 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
         <br><br>
-        <div class="a">
-            <h1>MODULES</h1>
+        <h1>MODULES</h1>
+        <div class="content">
 
             <div class="dropDownList">
                 <label for="towns">Module:</label>
@@ -42,49 +45,47 @@
                     <option value="BUS">Business</option>
                     <option value="PHP">PHP Elective</option>
                 </select>
-            </div>
-            <br>
+            </div><br><br>
 
             <div class="date">
                 <label for="name">Select date:</label>
                 <input type="date" id="selectDate">
+            </div><br><br>
+
+            <div class="radioButtons">
+                <h2>Available time slots</h2>
+
+                <div class="radioBtn1">
+                    <input class="radioTime" type="radio" name="time" id="time1" value="09:00 - 10:00" required>
+                    <label class="radio" for="time">09:00 - 10:00</label>
+                </div>
+
+                <div class="radioBtn2">
+                    <input class="radioTime" type="radio" name="time" id="time1" value="11:00 - 12:00" required>
+                    <label class="radio" for="time">11:00 - 12:00</label>
+                </div>
+
+                <div class="radioBtn3">
+                    <input class="radioTime" type="radio" name="time" id="time1" value="13:00 - 14:00" required>
+                    <label class="radio" for="time">13:00 - 14:00</label>
+                </div>
+
+                <div class="radioBtn4">
+                    <input class="radioTime" type="radio" name="time" id="time1" value="14:00 - 15:00" required>
+                    <label class="radio" for="time">14:00 - 15:00</label>
+                </div>
+            </div><br><br>
+
+            <div class="book">
+                <button id="BookBtn">BOOK</button>
             </div>
 
-            <h2>Available time slots</h2>
+            <br><br>
 
-            <div class="radioBtn1">
-                <input class="radioTime" type="radio" name="time" id="time1" value="09:00 - 10:00" required>
-                <label class="radio" for="time">09:00 - 10:00</label>
-            </div>
-
-            <div class="radioBtn2">
-                <input class="radioTime" type="radio" name="time" id="time1" value="11:00 - 12:00" required>
-                <label class="radio" for="time">11:00 - 12:00</label>
-            </div>
-
-            <div class="radioBtn3">
-                <input class="radioTime" type="radio" name="time" id="time1" value="13:00 - 14:00" required>
-                <label class="radio" for="time">13:00 - 14:00</label>
-            </div>
-
-            <div class="radioBtn4">
-                <input class="radioTime" type="radio" name="time" id="time1" value="14:00 - 15:00" required>
-                <label class="radio" for="time">14:00 - 15:00</label>
+            <div class="message">
+                <span class="bookMsg"></span>
             </div>
         </div>
-
-        <br>
-
-        <div class="b">
-            <button id="BookBtn">BOOK</button>
-        </div>
-
-        <br><br>
-
-        <div class="message">
-            <span class="bookMsg"></span>
-        </div>
-    </div>
 </body>
 <script src="./modules.js"></script>
 
