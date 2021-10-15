@@ -1,21 +1,13 @@
-const namefield = document.getElementById("modules");
 const bookBtn = document.getElementById("BookBtn");
-// const checkedBtn = document.querySelector("input[name='time']:checked");
 const date = document.getElementById("selectDate");
 const msg = document.querySelector(".bookMsg");
 
-
 bookBtn.addEventListener("click", () => {
-    let temp = namefield.value;
-
+    let moduleSelected = document.querySelector("input[name='module']:checked");
+    let studyModule = moduleSelected.value;
     const checkedBtn = document.querySelector("input[name='time']:checked");
-    let radio = checkedBtn.value;
-    let xDate = new Date(date.value);
-
-    msg.innerHTML = `Session successfully booked for ${temp} on ${xDate} at ${radio}`
-    
-
-
-
+    let radiobtn = checkedBtn.value;
+    let xDate = new Date(date.value).toLocaleDateString();
+    msg.innerHTML = `Session successfully booked for ${studyModule} on ${xDate} at ${radiobtn}`
 })
 
