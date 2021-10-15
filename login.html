@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tutoring App</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
-        <script src="javascript.js"></script>
-    </head>
-    <body onload="document.login.email.focus();">
 
-        <div>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+    <script src="javascript.js"></script>
+</head>
 
-                <label class="logo"><a href="login.html"><img class="logoImg" src="logo.jpeg" alt="CPUT Tutors" width="100" height="70"></a></label>
+<body onload="document.login.email.focus();">
 
-                <ul>
-                    <li><a class="active" href="login.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="modules.html">Modules</a></li>
-                    <li><a href="tutors.html">Tutors</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
 
-        <form name="login" class="box" action="modules.html" method="post" autocomplete="on" onSubmit="return formValidation();">
-            <h1>Login</h1>
-            <i class="fa fa-envelope" style="font-size:36px"></i>
-            <input type="text" name="email" placeholder="email" size="255" pattern=".+@mycput\.ac.za" required />
-            <i class="fa fa-lock" style="font-size:36px"></i>
-            <input type="password" name="password" placeholder="password" size="25" required />
-            <input type="hidden" name="hide" id="hide" />
-            <div style="color:red" id="err"></div>
-            <button onclick="return encryptPassword()" type="submit">As Student</button>
-            <button onclick="return encryptPassword()" type="submit">As Tutor</button>
-            <a href="registration.html" name="register">Register</a>
-            <a href="password.html" name="forgotpwd">Forgot Password?</a>
-        </form>
-    </body>
+            <label class="logo"><a href="login.html"><img class="logoImg" src="logo.jpg" alt="CPUT Tutors" width="100"
+                        height="70"></a></label>
+
+            <ul>
+                <li><a class="active" href="login.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="modules.html">Modules</a></li>
+                <li><a href="tutors.html">Tutors</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <form name="login" class="box" action="modules.html" method="post" autocomplete="on"
+        onSubmit="return formValidation();">
+        <h1>Login</h1>
+        <i class="fa fa-envelope" style="font-size:36px"></i>
+        <input type="text" name="email" placeholder="email" size="255" pattern=".+@mycput\.ac.za" required />
+        <i class="fa fa-lock" style="font-size:36px"></i>
+        <input type="password" name="password" placeholder="password" size="25" required />
+        <input type="hidden" name="hide" id="hide" />
+        <div style="color:red" id="err"></div>
+        <button onclick="return encryptPassword()" type="submit">As Student</button>
+        <button onclick="return encryptPassword()" type="submit">As Tutor</button>
+        <a href="registration.html" name="register">Register</a>
+        <a href="password.html" name="forgotpwd">Forgot Password?</a>
+    </form>
+</body>
+
 </html>
